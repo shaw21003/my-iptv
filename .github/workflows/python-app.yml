@@ -30,3 +30,8 @@ jobs:
     - name: iptv
       run: |
         python iptv_all.py
+    - name: Commit changes
+      run: |
+        git add -A
+        git commit -m "Auto-commit generated files [skip ci]" || echo "No changes to commit"
+        git push origin HEAD:main    
