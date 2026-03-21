@@ -70,7 +70,7 @@ with open('iptv.m3u8', 'w', encoding='utf-8') as f_live:
         
         try:
             index = int(cols[0].get_text(strip=True))
-            if index < 1 or index > 189:
+            if index < 1 or index > 194:
                 continue
         except:
             continue
